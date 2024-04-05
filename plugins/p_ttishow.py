@@ -23,7 +23,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/weebs_Support')
+                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/kdrama_times_chat')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,8 +38,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/weebs_Support'),
-                    InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://telegram.me/codeflix_bots')
+                    InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/kdrama_times_chat'),
+                    InlineKeyboardButton('main channel', url='https://telegram.me/kdrama_time')
                  ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -59,8 +59,8 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/OtakuFlix_Network/4639'),
-                                                                           InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url='https://telegram.me/codeflix_bots')
+                                                                           InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ', url='https://t.me/NatsuSenpai'),
+                                                                           InlineKeyboardButton('Main Channel', url='https://telegram.me/kdrama_time')
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
@@ -81,7 +81,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/weebs_support')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/kdrama_times_chat')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -120,7 +120,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/weebs_support')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://telegram.me/kdrama_times_chat')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
